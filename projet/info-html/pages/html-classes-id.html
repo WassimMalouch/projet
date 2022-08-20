@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>html_classes_id</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../../rainbow_code_highlighter/theme.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../info-html.css">
+
+</head>
+  <body>
+<div class="col-8 ">
+        <h3 id="html_classe_id">HTML Classes & ID</h3>
+        <br>
+          <h5 class="titles "> HTML classes</h5>
+          <p>The HTML class attribute is used to specify a class for an HTML element.</p>
+
+            <p><b>Multiple HTML elements can share the same class.</b></p>
+
+            <p>The <code class="codespan">class</code> attribute is often used to point to a class name in a style sheet(CSS).
+                It can also be used by a JavaScript to access and manipulate elements with the specific class name.</p>
+           <p>In the following example we have three <code class="codespan">< div></code> elements (Balise DIV is for division the parts of the html page)
+            with a class attribute with the value of "city". All of the three
+            <code class="codespan">< div></code> elements will be styled equally according to the .city style definition in the head section:</p>
+                <!-- exemple interactif-->
+      <div class="container-headings  text-center ">
+
+        <div class="All border border-1 rounded" >
+          <div class="container  row text-center">
+
+          <table class="table table-bordered ">
+          <div class="row"><p class="Headings-tuto ">HTML Demo: HTML lists(Unordered list) </p></div>
+            <div class=" col btn-group-vertical cls w-50 col-6 ">
+            <button class="btn1 rounded w-100" id="btn14">
+              <div class="code w-100 htmlHigh">
+                <pre><code translate="no" data-language="html">
+&lt;head&gt;
+&lt;style&gt;
+.city {
+background-color: tomato;
+color: white;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="city"&gt;
+  &lt;h2&gt;London&lt;/h2&gt;
+  &lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="city"&gt;
+  &lt;h2&gt;Paris&lt;/h2&gt;
+  &lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="city"&gt;
+  &lt;h2&gt;Tokyo&lt;/h2&gt;
+  &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+            </code></pre>
+</div>
+
+          </button>
+
+            </div>
+          <div class=" col outputs  col-6 d-flex justify-content-center align-items-center ">
+            <div class="output14"></div>
+
+          </div>
+          </table>
+        </div>
+      </div>
+      </div>
+           <!-- fin exemple interactif -->
+
+    <br>
+    <div class="text-bg-warning d-inline p-3"> <b>Note:The class attribute can be used on any HTML element.</b> </div><br><br>
+    <div class="text-bg-warning d-inline p-3"> <b>Note:Multiple elements can have the same class.</b> </div><br><br>
+    <div class="text-bg-warning d-inline p-3"> <b>You can learn much more about CSS in our CSS Tutorial.</b></div>
+    <br>
+    <br>
+    <h5 class="titles"> Multiple classes</h5>
+    <p>HTML elements can belong to more than one class.</p>
+    <p>To define multiple classes, separate the class names with a space, e.g. <code class="codespan">< div class="city main">.</code> The element will be styled according to all the classes specified.</p>
+    <div class="example">
+        <h5 class="examples">Example</h5>
+        <div class="code notranslate htmlHigh">
+<pre>
+<code data-language="html">
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+</code>
+</pre>
+      </div>
+          </div>
+    <h5 class="titles">HTML ID</h5>
+    <p>The HTML <code class="codespan">id</code> attribute is used to specify a unique id for an HTML element.</p>
+    <p>The value of the id attribute must be unique within the HTML document.</p>
+    <p>The <code class="codespan">id</code> attribute is used to point to a specific style declaration in a style sheet. </p>
+    <p>It is also used by JavaScript to access and manipulate the element with the specific id.</p>
+
+
+ <!-- exemple interactif-->
+ <div class="container-headings  text-center ">
+
+    <div class="All  border border-1 rounded" >
+      <div class="container  row text-center">
+
+      <table class="table table-bordered ">
+      <div class="row"><p class="Headings-tuto ">HTML Demo: HTML lists(Unordered list) </p></div>
+        <div class=" col btn-group-vertical  cls w-50 col-6 ">
+        <button class="btn1 rounded w-100" id="btn15">
+          <div class="code notranslate w-100 htmlHigh">
+            <pre><code data-language="html">
+
+<head>
+<style>
+#myHeader {
+background-color: lightblue;
+color: black;
+padding: 40px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 id="myHeader">My Header</h1>
+
+
+</code></pre>
+</div>
+      </button>
+        </div>
+      <div class=" col outputs  col-6 d-flex  justify-content-center align-items-center ">
+        <div class="output15"></div>
+
+
+      </div>
+      </table>
+    </div>
+  </div>
+  </div>
+       <!-- fin exemple interactif -->
+
+    <div class="text-bg-warning d-inline p-3"> <b>Note:The value of the id attribute must be unique within the HTML document.</b> </div><br><br>
+
+    <h2 id="html_layout">HTML layout</h2>
+    <p>The HTML page have different parts , and this what we called a LAYOUT .The structure of the page </p>
+    <div class="d-flex desc m-5">
+        <img class="h-40 w-50" src="../layout.png">
+        <ul class="list-group list-group-flush m-5">
+            <li class="list-group-item"> <code class="codespan">< header> </code>- Defines a header for a document or a section.</li>
+            <li class="list-group-item"><code class="codespan">< nav> </code>- Defines a set of navigation links</li>
+            <li class="list-group-item"><code class="codespan">< section> </code>- Defines a section in a document</li>
+            <li class="list-group-item"><code class="codespan">< article> </code>- Defines an independent, self-contained content</li>
+            <li class="list-group-item"><code class="codespan">< aside></code>- Defines content aside from the content (like a sidebar)</li>
+            <li class="list-group-item"><code class="codespan">< footer></code>- Defines a footer for a document or a section</li>
+        </ul>
+
+    </div>
+
+        <div id="classe-id"></div>
+ </div>
+
+<script src="info-html.js" defer></script>
+<script src="../../rainbow_code_highlighter/rainbow-custom.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

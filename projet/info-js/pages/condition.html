@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page vierge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../info-js.css" rel="stylesheet">
+    <link href="../../rainbow_code_highlighter/theme.css" rel="stylesheet" type="text/css">
+
+
+</head>
+    <body>
+
+<div class="col-8 w-100 ">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <h3 id="html_intro">JavaScript if else Condition</h3>
+                        <p>JavaScript includes if-else conditional statements to control the program flow, similar to other programming languages.</p>
+                            <ul>
+                                <li><p class="pt-2"> JavaScript includes following forms of if-else conditions:
+                                    <ul class="types">
+                                        <li><a href="#if_condition">if condition </a></li>
+                                        <li><a href="#else_condition">if-else condition</a></li>
+                                        <li><a href="#else_if_condition">else if condition </a></li>
+                                    </ul>
+                                </p></li>
+                            </ul> 
+                        <br>
+
+
+
+                        <h3  id="if_condition" >If condition </h3>
+                        <p>Use if conditional statement if you want to execute something based on some condition. </p>
+                        <div class="danger d-flex justify-content-center align-items-center  p-2 m-2">
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Syntaxe:</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+if(condition expression)
+{
+    // code to be executed if condition is true
+}
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            </div>
+                        <div class="part2  p-3 m-2">
+                            <h5 class="examples">Example</h5>
+                            <div class="code notranslate htmlHigh">
+                                <pre><code data-language="javascript">
+var mySal = 1000;
+var yourSal = 500;
+
+if( mySal > yourSal)
+{
+    alert("My Salary is greater than your salary");
+}
+                                </code></pre>
+                            </div>
+                            <a class="ws-btn margin-bottom" href="tryit.asp?filename=tryhtml_basic_document" target="_blank">Try it Yourself »</a>
+                        </div>
+                        <br>
+                        <h3> Example Explained:</h3>
+                        <div>In the above example, the first if statement contains conditional expression. The conditional expression mySal > yourSal will be evaluated to true, 
+                            so an alert message "My Salary is greater than your salary" will be displayed.
+                        </div>
+                        <br>
+
+
+                        <h3 class="mt-3"  id="else_condition" >If-Else condition </h3>
+                        <p> Use else statement when you want to execute the code every time when if condition evaluates to false.
+                            The else statement must follow if or else if statement. Multiple else block is NOT allowed.  </p>
+                        <div class="danger d-flex justify-content-center align-items-center  p-2 m-2">
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Syntaxe:</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+if(condition expression)
+{
+    //Execute this code..
+}
+else{
+    //Execute this code..
+}                                  </code></pre>
+
+                                </div>
+                            </div>
+                            <br>
+                            </div>
+                        <div class="part2  p-3 m-2">
+                            <h5 class="examples">Example</h5>
+                            <div class="code notranslate htmlHigh">
+                                <pre><code data-language="javascript">
+var mySal = 500;
+var yourSal = 1000;
+
+if( mySal > yourSal)
+{
+    alert("My Salary is greater than your salary");
+}
+else
+{
+    alert("My Salary is less than or equal to your salary");
+}
+                                </code></pre>
+                            </div>
+                            <a class="ws-btn margin-bottom" href="tryit.asp?filename=tryhtml_basic_document" target="_blank">Try it Yourself »</a>
+                        </div>
+                        <br>
+                        <h3> Example Explained:</h3>
+                        <div>In the above example, the first if statement contains conditional expression. The conditional expression mySal > yourSal will be evaluated to true, 
+                            so an alert message "My Salary is greater than your salary" will be displayed.
+                        </div>
+                        <br>
+
+
+
+
+
+                        <h3  id="else_if_condition" >Else if condition </h3>
+                        <p> Use "else if" condition when you want to apply second level condition after if statement.  </p>
+                        <div class="danger d-flex justify-content-center align-items-center  p-2 m-2">
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Syntaxe:</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+if(condition expression)
+{
+    //Execute this code block
+}
+else if(condition expression){ 
+    //Execute this code block
+}
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            </div>
+                        <div class="part2  p-3 m-2">
+                            <h5 class="examples">Example</h5>
+                            <div class="code notranslate htmlHigh">
+                                <pre><code data-language="javascript">
+var mySal = 500;
+var yourSal = 1000;
+
+if( mySal > yourSal)
+{
+    alert("My Salary is greater than your salary");
+}
+else if(mySal < yourSal)
+{
+    alert("My Salary is less than your salary");
+}
+else if(mySal == yourSal)
+{
+    alert("My Salary is equal to your salary");
+}
+                                </code></pre>
+                            </div>
+                            <a class="ws-btn margin-bottom" href="tryit.asp?filename=tryhtml_basic_document" target="_blank">Try it Yourself »</a>
+                        </div>
+                        <br>
+                        <h3> Example Explained:</h3>
+                        <div>In the above example, the first if statement contains conditional expression. The conditional expression mySal > yourSal will be evaluated to true, 
+                            so an alert message "My Salary is greater than your salary" will be displayed.
+                        </div>
+                        <br>
+
+
+
+
+
+
+
+
+
+
+
+<div class="danger d-inline-block p-2 m-2">
+<h4> Note </h4>
+<div class="text-center mb-2"> curly braces { } is not required when if block contains only a single line to execute.
+</div>
+
+This blocks works same:
+<div class="part2   p-3 m-2">
+    <h5 class="examples">Example</h5>
+    <pre ><code data-language="javascript">
+if( x > y)
+{
+    alert("message");
+}
+
+//the other code
+
+if( x > y)
+
+    alert("message");
+
+         </code></pre>
+</div>
+<br>
+</div></div>
+<div class="danger d-inline-block p-2 m-2">
+This blocks are not the same:
+<div class="part2   p-3 m-2">
+    <h5 class="examples">Example</h5>
+    <pre ><code data-language="javascript">
+if( x > y)
+{
+    alert("message1");
+
+    alert("message2");
+
+}
+
+//the other code
+
+if( x > y)
+
+    alert("message1");
+
+    alert("message2");
+
+
+         </code></pre>
+</div>
+<br>
+</div>
+</div>
+</div>
+
+<hr>
+<script src="../../rainbow_code_highlighter/rainbow-custom.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

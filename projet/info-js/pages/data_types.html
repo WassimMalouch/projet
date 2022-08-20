@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page vierge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../../rainbow_code_highlighter/theme.css" rel="stylesheet" type="text/css">
+    <link href="../info-js.css" rel="stylesheet">
+ 
+</head>
+    <body>
+
+<div class="col-8 w-100 ">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <h3 id="html_intro">JavaScript types</h3>
+                        <p class="types">The set of types in the JavaScript language consists of <a href="#primitive">primitive</a> values and <a href="#object">objects</a>.
+                            <ul>
+                                <li>Primitive values (immutable datum represented directly at the lowest level of the language)
+                                    <ul class="types">
+                                        <li><a href="#boolean_type">Boolean type</a></li>
+                                        <li><a href="#null_type">Null type</a></li>
+                                        <li><a href="#undefined_type">Undefined type</a></li>
+                                        <li><a href="#number_type">Number type</a></li>
+                                        <li><a href="#bigint_type">BigInt type</a></li>
+                                        <li><a href="#string_type">String type</a></li>
+                                        <li><a href="#symbol_type">Symbol type</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Objects (collections of properties)
+                                </li>
+                            </ul>
+                        </p>
+                        
+                     
+
+                            <br>
+                            <h3 id="primitive" >Primitive values</h3>
+                            <div>
+                                All types except objects define immutable values (that is, values which can't be changed).
+                                For example, Strings are immutable. We refer to values of these types as "primitive values".
+                            </div>
+                            <br>
+
+
+                            <h3  id="boolean_type" >Boolean</h3>
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Example</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+let bool = true ;
+typeof ( bool ) // 'boolean' ;  
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div>This data type is what contains the values <span class="cle" > true</span> or <span class="cle" > false</span>. This is great in that you can use other values to represent that same concept like 0 for false, and 1 for true.
+                            </div>
+                            <br>
+
+
+                            <h3  id="null_type" >Null</h3>
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Example</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+typeof ( null ) // 'object' ;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            <div> Null is special because the typeof operator reports its type as  <span class="cle" > 'object'</span>.
+                            </div>
+                            <br>
+
+
+                            <h3  id="undefined_type" >Undefined</h3>
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Example</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+let x ;
+typeof ( x ) // 'Undefined' ;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            <div>This value is automatically assigned to variables that have just been declared but not defined. If you were to put this in an if statement, the value would be false so this is another handy thing you could use like mentioned in the <span class="cle" > boolean</span> section.</div>
+                            <br>
+
+                            <h3  id="number_type" >Number</h3>
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Example</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+let y = 123 ;
+typeof ( y ) // 'number' ;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            <div>In other programming languages, you can have numbers be defined as floats, integers, doubles and so on and so forth. Javascript simplified this feature by just making every number it comes across  <span class="cle"> Number</span> , with an exception.</div>
+                            <br>
+
+
+                            <h3  id="bigint_type" >BigInt</h3>
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Example</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+let bigY = 123456789101112 ;
+typeof ( bigY ) // 'bgint' ;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            <div>This is similar to <span class="cle">Number</span> however, it allows you to safely represent integer values larger than 253. You can create a bigint by appending n to the end of the number or by wrapping the number, or string for this case, in the <span class="cle">BigInt()</span> constructor.</div>
+                            <br>
+
+                            <h3  id="string_type" >String</h3>
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Example</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+let message = "WS school is the best e-learning website !" ;
+typeof ( message ) // 'string' ;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            <div>It is important to note that strings can be either a primitive, string literal, or an object. Javascript automatically converts string primitives to <span class="cle">objects</span> to enable the user to use the handy array of functions available for use.</div>
+                            <br>
+
+                            <h3  id="symbol_type" >Symbol</h3>
+                            <div class="part2  p-3 m-2">
+                                <h5 class="examples">Example</h5>
+                                <div class="code notranslate htmlHigh">
+                                    <pre><code data-language="javascript">
+let z = Symbol ("this is a symbol" );
+typeof ( z ) // 'symbol' ;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <br>
+                            <div>A Symbol is a value created by invoking the <span class="cle">function</span> which is guaranteed to create a unique value. It takes one parameter, a string <span class="cle">description</span>, that will show up when you print the symbol.</div>
+                            <br>
+
+<br>
+<br>
+
+<div class="danger d-inline-block w-100">
+<h4> Note : TYPEOF()</h4>
+<div>The <span class="cle">typeof</span> operator tells you what type a primitive value is.
+</div>
+<div class="part2  p-3 m-2">
+    <h5 class="examples">Example</h5>
+    <div class="code notranslate htmlHigh">
+        <pre><code data-language="javascript">
+let note = "what is typeof() role ??" ;
+typeof ( note ) // 'string' ;
+        </code></pre>                          
+       
+    </div>
+</div>
+<br>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+
+<hr>
+
+
+<script src="../../rainbow_code_highlighter/rainbow-custom.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

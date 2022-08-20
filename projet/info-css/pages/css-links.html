@@ -1,0 +1,133 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css_links</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../rainbow_code_highlighter/theme.css" rel="stylesheet" type="text/css">
+    <link href="../info-css.css" rel="stylesheet">
+  </head>
+<body>
+
+    <div class="col-8 ">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+        <h3 id="css_links">CSS Links</h3>
+        <h5 class="titles">Links</h5>
+        <p>With CSS, links can be styled in many different ways.</p>
+        <hr>
+        <a class="text-link1">text link</a>
+        <a class="text-link2">text link</a>
+        <a class="button button1">link button</a>
+        <a class="btn btn2">link button</a>
+     <p>Links can be styled with any CSS property (e.g. color, font-family, background, etc.). </p>
+      <p>In addition, links can be styled differently depending on what state they are in. </p>
+     <p>The four links states are: </p>
+     <ul>
+       <li><code class="codespan">a:link</code>- a normal, unvisited link</li>
+       <li><code class="codespan">a:visited</code>- a link the user has visited</li>
+       <li><code class="codespan">a:hover</code>- a link when the user mouses over it</li>
+       <li><code class="codespan">a:active</code>- a link the moment it is clicked</li>
+     </ul>
+
+
+      
+     <!-- exemple interactif-->
+     <div class="container-headings  text-center ">
+
+      <div class="All d-flex justify-content-between align-items-center border border-1 rounded">
+        <div class="container row text-center">
+          
+        <table class="table table-bordered ">  
+        <div class="row"><p class="Headings-tuto ">CSS Demo: Syntax</p></div>
+        <div class="row">
+          <div class=" col btn-group-vertical w-50 col-6 ">
+          <button class="btn1 rounded w-100" id="btn18">
+          <pre>
+            <code data-language="html">
+a:visited{
+color:red;
+} 
+</code>
+          </pre>
+          </button>
+          <button class="btn1 rounded w-100" id="btn19">
+            <pre>
+              <code data-language="html">
+a:hover{
+color:green
+}
+</code>
+            </pre>
+            </button>
+            <button class="btn1 rounded w-100" id="btn20">
+              <pre>
+                <code data-language="html">
+a:active{
+color:blue;
+}
+</code>
+              </pre>
+              </button>
+              
+          </div>
+          <div class=" col outputs d-flex row justify-content-center align-items-center  col-6 ">
+            <div class="output18"><a href="#">Visit this link</a></div>
+          <div class="output19"><a href="#">Mouse Over this link</a></div>
+          <div class="output20"><a href="#">Click on the link</a></div>
+
+        </div>
+        </table>
+      </div>
+    </div>
+    </div>
+         <!-- fin exemple interactif -->
+
+    <h5 class="titles">Text Decoration</h5>
+    <p> The <code class="codespan">text-decoration</code> property is mostly used to remove underlines from links:</p>
+
+     <!-- exemple interactif-->
+     <div class="container-headings  text-center ">
+
+        <div class="All d-flex justify-content-between align-items-center border border-1 rounded">
+          <div class="container row text-center">
+            
+          <table class="table table-bordered ">  
+          <div class="row"><p class="Headings-tuto ">CSS Demo: Syntax</p></div>
+          <div class="row">
+            <div class=" col btn-group-vertical w-50 col-6 ">
+            <button class="btn1 rounded w-100" id="btn21">
+            <pre>
+              <code data-language="html">
+a{
+text-decoration:none;
+} 
+</code>
+            </pre>
+            </button>
+            </div>
+            <div class=" col outputs d-flex row justify-content-center align-items-center  col-6 ">
+                <a style="text-decoration:none;"class="output21"></a>
+           
+  
+          </div>
+          </table>
+        </div>
+      </div>
+      </div>
+           <!-- fin exemple interactif -->
+  
+
+
+
+
+   </div>
+  </div>
+<script src="info-css.js"></script>
+<script src="../rainbow_code_highlighter/rainbow-custom.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>
